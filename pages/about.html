@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+<style>
+  /* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 2rem;
+}
+
+/* Navigation */
+nav {
+  background-color: #2c3e50;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #1abc9c;
+}
+
+/* About Container */
+.about-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* About Header */
+.about-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #1abc9c;
+  font-weight: bold;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-section img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-text {
+  flex: 2;
+  min-width: 280px;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #1abc9c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #16a085;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    padding-top: 1rem;
+  }
+}
+
+</style>
+
+</head>
+<body>
+  <nav>
+    <a href="/home">Home</a>
+    <a href="/about" class="active">About</a>
+    <a href="/contact">Contact</a>
+  </nav>
+
+  <div class="about-container">
+    <div class="about-header">
+      <h1>About <span class="highlight">Our Company</span></h1>
+      <p>We are passionate about delivering the best services to our clients.</p>
+    </div>
+    <div class="about-section">
+      <div class="about-text">
+        <p>
+          Our mission is to provide <span class="highlight">quality solutions</span> that help businesses grow and succeed in the digital world. We focus on innovation, reliability, and customer satisfaction.
+        </p>
+        <p>
+          With years of experience and a dedicated team, we ensure every project is delivered with excellence.
+        </p>
+        <a href="/contact" class="btn">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

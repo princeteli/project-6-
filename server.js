@@ -32,7 +32,7 @@ const server = http.createServer(function (req, res) {
       servePage(res, "./pages/home.html", "text/html");
       break;
     case "/service":
-      servePage(res, "./pages/home.html", "text/html");
+      servePage(res, "./pages/service.html", "text/html");
       break;
     case "/about":
       servePage(res, "./pages/about.html", "text/html");
@@ -55,4 +55,5 @@ const server = http.createServer(function (req, res) {
 server.listen(PORT, () => {
   console.log(`server running on http://localhost:${PORT}`);
 });
+
 
